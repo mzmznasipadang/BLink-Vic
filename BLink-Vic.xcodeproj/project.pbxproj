@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B81D8A62DCB4C15006EDEEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B81D8AD2DCB4C15006EDEEC;
+			remoteInfo = "BLink-Vic";
+		};
+		8B81D8C82DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B81D8A62DCB4C15006EDEEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B81D8AD2DCB4C15006EDEEC;
+			remoteInfo = "BLink-Vic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLink-Vic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8B81D8B02DCB4C15006EDEEC /* BLink-Vic */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BLink-Vic";
+			sourceTree = "<group>";
+		};
+		8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BLink-VicTests";
+			sourceTree = "<group>";
+		};
+		8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BLink-VicUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B81D8AB2DCB4C15006EDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8BA2DCB4C16006EDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8C42DCB4C16006EDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B81D8A52DCB4C15006EDEEC = {
+			isa = PBXGroup;
+			children = (
+				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
+				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
+				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
+				8B81D8AF2DCB4C15006EDEEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B81D8AF2DCB4C15006EDEEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */,
+				8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */,
+				8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B81D8D12DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-Vic" */;
+			buildPhases = (
+				8B81D8AA2DCB4C15006EDEEC /* Sources */,
+				8B81D8AB2DCB4C15006EDEEC /* Frameworks */,
+				8B81D8AC2DCB4C15006EDEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
+			);
+			name = "BLink-Vic";
+			packageProductDependencies = (
+			);
+			productName = "BLink-Vic";
+			productReference = 8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B81D8BC2DCB4C16006EDEEC /* BLink-VicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B81D8D42DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicTests" */;
+			buildPhases = (
+				8B81D8B92DCB4C16006EDEEC /* Sources */,
+				8B81D8BA2DCB4C16006EDEEC /* Frameworks */,
+				8B81D8BB2DCB4C16006EDEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B81D8BF2DCB4C16006EDEEC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
+			);
+			name = "BLink-VicTests";
+			packageProductDependencies = (
+			);
+			productName = "BLink-VicTests";
+			productReference = 8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B81D8C62DCB4C16006EDEEC /* BLink-VicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B81D8D72DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicUITests" */;
+			buildPhases = (
+				8B81D8C32DCB4C16006EDEEC /* Sources */,
+				8B81D8C42DCB4C16006EDEEC /* Frameworks */,
+				8B81D8C52DCB4C16006EDEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B81D8C92DCB4C16006EDEEC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
+			);
+			name = "BLink-VicUITests";
+			packageProductDependencies = (
+			);
+			productName = "BLink-VicUITests";
+			productReference = 8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B81D8A62DCB4C15006EDEEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					8B81D8AD2DCB4C15006EDEEC = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					8B81D8BC2DCB4C16006EDEEC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8B81D8AD2DCB4C15006EDEEC;
+					};
+					8B81D8C62DCB4C16006EDEEC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8B81D8AD2DCB4C15006EDEEC;
+					};
+				};
+			};
+			buildConfigurationList = 8B81D8A92DCB4C15006EDEEC /* Build configuration list for PBXProject "BLink-Vic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B81D8A52DCB4C15006EDEEC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8B81D8AF2DCB4C15006EDEEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */,
+				8B81D8BC2DCB4C16006EDEEC /* BLink-VicTests */,
+				8B81D8C62DCB4C16006EDEEC /* BLink-VicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B81D8AC2DCB4C15006EDEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8BB2DCB4C16006EDEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8C52DCB4C16006EDEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B81D8AA2DCB4C15006EDEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8B92DCB4C16006EDEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B81D8C32DCB4C16006EDEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B81D8BF2DCB4C16006EDEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
+			targetProxy = 8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */;
+		};
+		8B81D8C92DCB4C16006EDEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
+			targetProxy = 8B81D8C82DCB4C16006EDEEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8B81D8CF2DCB4C16006EDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B81D8D02DCB4C16006EDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B81D8D22DCB4C16006EDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B81D8D32DCB4C16006EDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B81D8D52DCB4C16006EDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLink-Vic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLink-Vic";
+			};
+			name = Debug;
+		};
+		8B81D8D62DCB4C16006EDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLink-Vic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLink-Vic";
+			};
+			name = Release;
+		};
+		8B81D8D82DCB4C16006EDEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BLink-Vic";
+			};
+			name = Debug;
+		};
+		8B81D8D92DCB4C16006EDEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PA28UZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BLink-Vic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B81D8A92DCB4C15006EDEEC /* Build configuration list for PBXProject "BLink-Vic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81D8CF2DCB4C16006EDEEC /* Debug */,
+				8B81D8D02DCB4C16006EDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B81D8D12DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-Vic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81D8D22DCB4C16006EDEEC /* Debug */,
+				8B81D8D32DCB4C16006EDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B81D8D42DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81D8D52DCB4C16006EDEEC /* Debug */,
+				8B81D8D62DCB4C16006EDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B81D8D72DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81D8D82DCB4C16006EDEEC /* Debug */,
+				8B81D8D92DCB4C16006EDEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B81D8A62DCB4C15006EDEEC /* Project object */;
+}
