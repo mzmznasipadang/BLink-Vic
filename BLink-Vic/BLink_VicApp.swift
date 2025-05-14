@@ -10,23 +10,39 @@ import SwiftData
 
 @main
 struct BLink_VicApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+    
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "BG") ?? .white
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+        UITabBar.appearance().standardAppearance = appearance
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = appearance
         }
+    }
+
+    // Set up your model container for SwiftData
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([RouteModel.self, StationModel.self])
+        let container = try! ModelContainer(for: schema)
+        return container
     }()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .modelContainer(sharedModelContainer)
+                .onAppear {
+                    let context = sharedModelContainer.mainContext
+                    Task {
+                        let descriptor = FetchDescriptor<RouteModel>()
+                        let count = (try? context.fetchCount(descriptor)) ?? 0
+                        if count == 0 {
+                            DataSeeder.seedInitialData(modelContext: context)
+                        }
+                    }
+                }
         }
-        .modelContainer(sharedModelContainer)
     }
 }

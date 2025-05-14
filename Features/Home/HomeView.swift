@@ -6,28 +6,89 @@
 //
 
 import SwiftUI
+import SwiftData
+import MapKit
+import UIKit
 
 struct HomeView: View {
-    @State private var searchText = ""
+    @Environment(\.modelContext) private var modelContext
+    @StateObject private var viewModel = HomeViewModel()
     @State private var showHelp = false
+    @State private var showSearchResults = false
+    @State private var selectedCompletion: MKLocalSearchCompletion?
+    @State private var showSearchResult = false
     
     init() {
-            let primary = UIColor(named: "Primary") ?? UIColor.systemBlue
-            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: primary]
-            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: primary]
-        }
-
+        let primary = UIColor(named: "Primary") ?? UIColor.systemBlue
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: primary]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: primary]
+    }
+    
     var body: some View {
         NavigationStack {
-            List {
-                // Example list content
-                Section(header: Text("Recent Routes")) {
-                    Text("Eka Hospital → Sinar Mas Land")
-                    Text("Greenwich Park → The Breeze")
+            VStack {
+                // Search bar
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    TextField("Where you want to go?", text: $viewModel.searchText)
+                        .onChange(of: viewModel.searchText) { newValue in
+                            viewModel.updateSearchResults()
+                            showSearchResults = !newValue.isEmpty && !viewModel.searchResults.isEmpty
+                        }
+                        .textFieldStyle(PlainTextFieldStyle())
+                    if !viewModel.searchText.isEmpty {
+                        Button(action: { viewModel.searchText = "" }) {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
+                .padding(10)
+                .background(Color(.systemGray6))
+                .cornerRadius(12)
+                .padding(.horizontal)
+                
+                // Show search results if needed
+                if showSearchResults && !viewModel.searchResults.isEmpty {
+                    List(viewModel.searchResults, id: \.self) { result in
+                        Button {
+                            selectedCompletion = result
+                            showSearchResult = true
+                        } label: {
+                            VStack(alignment: .leading) {
+                                Text(result.title)
+                                if !result.subtitle.isEmpty {
+                                    Text(result.subtitle).font(.caption).foregroundColor(.secondary)
+                                }
+                            }
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+                
+                // Show selected location if available
+                if let selected = viewModel.selectedLocation {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Selected location:")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        Text(selected.name ?? "Unnamed location")
+                            .font(.headline)
+                        if let address = selected.placemark.title {
+                            Text(address)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                }
+                
+                Spacer()
+                
             }
             .navigationTitle("BLink!")
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Where you want to go?")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Help") {
@@ -35,13 +96,22 @@ struct HomeView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showHelp) {
-                OnboardingView()
+            .navigationDestination(isPresented: $showSearchResult) {
+                if let completion = selectedCompletion {
+                    SearchResultView(selectedCompletion: completion)
+                }
             }
+        }
+        .onAppear {
+            viewModel.fetchRecentRoutes(modelContext: modelContext)
         }
     }
 }
 
 #Preview {
-    HomeView()
+    let viewModel = HomeViewModel()
+    // Map exampleRoutes to HomeRouteViewData
+    viewModel.recentRoutes = exampleRoutes.map { HomeRouteViewData(route: $0) }
+    return HomeView()
+        .environmentObject(viewModel)
 }

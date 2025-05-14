@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B81D8E22DCB612C006EDEEC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E12DCB612C006EDEEC /* MainTabView.swift */; };
+		8B81D8E42DCB61AA006EDEEC /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E32DCB61AA006EDEEC /* ScanView.swift */; };
+		8B81D8E62DCB61CD006EDEEC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,27 @@
 		8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLink-Vic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B81D8E12DCB612C006EDEEC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8B81D8E32DCB61AA006EDEEC /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8B81DAE62DD4851B006EDEEC /* Exceptions for "BLink-Vic" folder in "BLink-Vic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B81D8B02DCB4C15006EDEEC /* BLink-Vic */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8B81DAE62DD4851B006EDEEC /* Exceptions for "BLink-Vic" folder in "BLink-Vic" target */,
+			);
 			path = "BLink-Vic";
 			sourceTree = "<group>";
 		};
@@ -43,6 +65,11 @@
 		8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "BLink-VicUITests";
+			sourceTree = "<group>";
+		};
+		8B81D9352DCDE347006EDEEC /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +102,9 @@
 		8B81D8A52DCB4C15006EDEEC = {
 			isa = PBXGroup;
 			children = (
+				8B81D9352DCDE347006EDEEC /* Features */,
+				8B81D8DF2DCB5263006EDEEC /* Main View */,
+				8B81D8E02DCB6121006EDEEC /* Navigation */,
 				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
 				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
 				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
@@ -90,6 +120,23 @@
 				8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8B81D8DF2DCB5263006EDEEC /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				8B81D8E32DCB61AA006EDEEC /* ScanView.swift */,
+				8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		8B81D8E02DCB6121006EDEEC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8B81D8E12DCB612C006EDEEC /* MainTabView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +156,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
+				8B81D9352DCDE347006EDEEC /* Features */,
 			);
 			name = "BLink-Vic";
 			packageProductDependencies = (
@@ -236,6 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B81D8E62DCB61CD006EDEEC /* ProfileView.swift in Sources */,
+				8B81D8E42DCB61AA006EDEEC /* ScanView.swift in Sources */,
+				8B81D8E22DCB612C006EDEEC /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +451,10 @@
 				DEVELOPMENT_TEAM = T8PA28UZH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BLink-Vic/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to find nearby bus routes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -410,11 +465,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSLocationWhenInUseUsageDescription = "We use your location to find nearby bus routes.";
 				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +488,10 @@
 				DEVELOPMENT_TEAM = T8PA28UZH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BLink-Vic/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to find nearby bus routes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,11 +502,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSLocationWhenInUseUsageDescription = "We use your location to find nearby bus routes.";
 				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

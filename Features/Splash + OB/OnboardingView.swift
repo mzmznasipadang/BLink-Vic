@@ -10,78 +10,77 @@ import SwiftUI
 
 struct OnboardingView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 32) {
-            // Header
-            Text("Welcome to ")
-                .font(.system(size: 32, weight: .bold))
-            + Text("BLink!")
-                .font(.system(size: 32, weight: .bold))
+        VStack(spacing: 24) {
+            // Drag indicator
+            RoundedRectangle(cornerRadius: 2)
+                .frame(width: 40, height: 4)
+                .foregroundColor(.gray.opacity(0.3))
+                .padding(.top, 16)
+
+            // Welcome Text
+            (
+                Text("Welcome to ")
+                    .font(.system(size: 28, weight: .bold)) +
+                Text("BLink!")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(Color("Utama"))
+            )
+
+            // Feature Cards
+            VStack(spacing: 16) {
+                FeatureCard(icon: "point.topright.arrow.triangle.backward.to.point.bottomleft.filled.scurvepath", title: "Navigate Easier", description: "Using our route finder, plan your trip better!")
+                FeatureCard(icon: "bus", title: "Worry Less", description: "Now you can ride BSD Link with confidence with our app")
+                FeatureCard(icon: "checkmark.seal", title: "Guarantee", description: "Guarantee pusing kepala ngoding ini dah")
+            }
+            .padding(.horizontal)
+            
+            Spacer()
+        }.padding()
+            
+        Button(action: {
+            // handle continue
+        }) {
+            Text("Continue")
+                .font(.headline)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color("Utama"))
+                .foregroundColor(.white)
+                .cornerRadius(12)
+        }
+        .padding(.horizontal, 16)
+        .padding(.bottom, 16)
+//        .background(Color(.systemGray6))
+    }
+}
+
+struct FeatureCard: View {
+    let icon: String
+    let title: String
+    let description: String
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 16) {
+            Image(systemName: icon)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 32, height: 32)
                 .foregroundColor(Color("Utama"))
 
-            // Features list
-            VStack(alignment: .leading, spacing: 24) {
-                HStack(alignment: .top, spacing: 16) {
-                    Image(systemName: "point.topright.filled.arrow.triangle.backward.to.point.bottomleft.scurvepath")
-                        .font(.system(size: 24))
-                        .foregroundColor(Color("Utama"))
-
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Navigate Easier")
-                            .font(.headline)
-                        Text("Using our route finder, plane your trip better!")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                }
-
-                HStack(alignment: .top, spacing: 16) {
-                    Image(systemName: "bus")
-                        .font(.system(size: 24))
-                        .foregroundColor(Color("Utama"))
-
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Worry Less")
-                            .font(.headline)
-                        Text("Now you can ride BSD Link with confidence with our app")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                }
-
-                HStack(alignment: .top, spacing: 16) {
-                    Image(systemName: "checkmark.seal")
-                        .font(.system(size: 24))
-                        .foregroundColor(Color("Utama"))
-
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Guarantee")
-                            .font(.headline)
-                        Text("Guarantee pusing kepala ini mah")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                }
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                    .font(.headline)
+                Text(description)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
             }
 
             Spacer()
-
-            // Continue button
-            Button(action: {
-                // handle continue
-            }) {
-                Text("Continue")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color("Utama"))
-                    .foregroundColor(.white)
-                    .cornerRadius(12)
-            }
-            .padding(.horizontal, 16)
-            .padding(.bottom, 16)
         }
-        .padding(.horizontal, 16)
-        .padding(.top, 32)
+        .padding()
+        .background(Color.white)
+        .cornerRadius(16)
+        .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: 2)
     }
 }
 

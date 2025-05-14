@@ -16,19 +16,22 @@ struct MainTabView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-
-//            ScanView()
-//                .tabItem {
-//                    Image(systemName: "camera")
-//                    Text("Scan")
-//                }
-//
-//            ProfileView()
-//                .tabItem {
-//                    Image(systemName: "person")
-//                    Text("Profile")
-//                }
-        }
-        .accentColor(Color("Primary")) // Use your asset color
+            
+            ScanView()
+                .tabItem {
+                    Image(systemName: "camera")
+                    Text("Scan")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+        }.accentColor(Color("Utama"))
     }
+}
+
+#Preview {
+    MainTabView()
 }
