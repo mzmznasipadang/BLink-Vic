@@ -6,12 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		8B81D8E22DCB612C006EDEEC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E12DCB612C006EDEEC /* MainTabView.swift */; };
-		8B81D8E42DCB61AA006EDEEC /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E32DCB61AA006EDEEC /* ScanView.swift */; };
-		8B81D8E62DCB61CD006EDEEC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -33,9 +27,6 @@
 		8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLink-Vic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B81D8E12DCB612C006EDEEC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		8B81D8E32DCB61AA006EDEEC /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
-		8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -103,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				8B81D9352DCDE347006EDEEC /* Features */,
-				8B81D8DF2DCB5263006EDEEC /* Main View */,
-				8B81D8E02DCB6121006EDEEC /* Navigation */,
 				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
 				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
 				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
@@ -120,23 +109,6 @@
 				8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8B81D8DF2DCB5263006EDEEC /* Main View */ = {
-			isa = PBXGroup;
-			children = (
-				8B81D8E32DCB61AA006EDEEC /* ScanView.swift */,
-				8B81D8E52DCB61CD006EDEEC /* ProfileView.swift */,
-			);
-			path = "Main View";
-			sourceTree = "<group>";
-		};
-		8B81D8E02DCB6121006EDEEC /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				8B81D8E12DCB612C006EDEEC /* MainTabView.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B81D8E62DCB61CD006EDEEC /* ProfileView.swift in Sources */,
-				8B81D8E42DCB61AA006EDEEC /* ScanView.swift in Sources */,
-				8B81D8E22DCB612C006EDEEC /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
