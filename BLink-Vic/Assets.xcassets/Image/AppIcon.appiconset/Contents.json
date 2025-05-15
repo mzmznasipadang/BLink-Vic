@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "B-Link Transport (4).png",
+      "filename" : "BLink Icon Light.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,6 +13,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "BLink Icon Dark.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
