@@ -56,34 +56,34 @@ struct SearchResultView: View {
 
     }
 
-private var userLocationField: some View {
-    HStack {
-        Image(systemName: "location.fill")
-            .foregroundColor(.blue)
-        if isEditingUserLocation {
-            TextField("Enter your location", text: $viewModel.startSearchText)
-                .onSubmit {
-                    isEditingUserLocation = false
-                    viewModel.isEditingUserLocation = false
-                }
-                .onChange(of: viewModel.startSearchText) {
-                    viewModel.updateStartSearchResults()
-                    showSearchResults = !viewModel.startSearchText.isEmpty && !viewModel.startSearchResults.isEmpty
-                }
-        } else {
-            Text(viewModel.startSearchText.isEmpty ? "Getting location..." : viewModel.startSearchText)
-                .foregroundColor(.primary)
-                .onTapGesture {
-                    isEditingUserLocation = true
-                    viewModel.isEditingUserLocation = true
-                }
+    private var userLocationField: some View {
+        HStack {
+            Image(systemName: "location.fill")
+                .foregroundColor(.blue)
+            if isEditingUserLocation {
+                TextField("Enter your location", text: $viewModel.startSearchText)
+                    .onSubmit {
+                        isEditingUserLocation = false
+                        viewModel.isEditingUserLocation = false
+                    }
+                    .onChange(of: viewModel.startSearchText) {
+                        viewModel.updateStartSearchResults()
+                        showSearchResults = !viewModel.startSearchText.isEmpty && !viewModel.startSearchResults.isEmpty
+                    }
+            } else {
+                Text(viewModel.startSearchText.isEmpty ? viewModel.userAddress : viewModel.startSearchText)
+                    .foregroundColor(.primary)
+                    .onTapGesture {
+                        isEditingUserLocation = true
+                        viewModel.isEditingUserLocation = true
+                    }
+            }
+            Spacer()
         }
-        Spacer()
+        .padding()
+        .background(Color.gray.opacity(0.12))
+        .cornerRadius(12)
     }
-    .padding()
-    .background(Color.gray.opacity(0.12))
-    .cornerRadius(12)
-}
 
     private var destinationField: some View {
         HStack {
