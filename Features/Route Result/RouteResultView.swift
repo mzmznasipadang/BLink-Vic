@@ -70,34 +70,38 @@ struct RouteResultView: View {
                 .foregroundColor(.secondary)
 
             // Timeline of stops (snippet)
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 16) {
                 ForEach(routeResult.stops.prefix(4)) { stop in
-                    HStack {
-                        VStack {
+                    HStack(alignment: .top, spacing: 12) {
+                        VStack(spacing: 0) {
                             Circle()
-                                .fill(stop.isCurrent ? Color.purple : Color.gray.opacity(0.3))
-                                .frame(width: 12, height: 12)
+                                .fill(stop.isCurrent ? routeResult.badgeColor : Color.gray.opacity(0.4))
+                                .frame(width: 10, height: 10)
                             if stop != routeResult.stops.prefix(4).last {
                                 Rectangle()
-                                    .fill(Color.purple)
-                                    .frame(width: 2, height: 24)
+                                    .fill(stop.isCurrent ? routeResult.badgeColor : Color.gray.opacity(0.3))
+                                    .frame(width: 2, height: 28)
                             }
                         }
-                        .frame(width: 16)
-                        VStack(alignment: .leading) {
+                        .frame(width: 20)
+
+                        HStack(spacing: 4) {
                             Text(stop.name)
-                                .fontWeight(stop.isCurrent ? .bold : .regular)
+                                .fontWeight(stop.isCurrent ? .semibold : .regular)
+                                .foregroundColor(.primary)
                             if stop.isCurrent {
                                 Text("(Current Stop)")
-                                    .font(.caption)
-                                    .foregroundColor(.purple)
+                                    .font(.caption2)
+                                    .foregroundColor(routeResult.badgeColor)
                             } else if stop.isNext {
                                 Text("(Next Stop)")
-                                    .font(.caption)
+                                    .font(.caption2)
                                     .foregroundColor(.blue)
                             }
                         }
+
                         Spacer()
+
                         if let time = stop.time {
                             Text(time)
                                 .font(.subheadline)
