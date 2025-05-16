@@ -177,8 +177,10 @@ private var userLocationField: some View {
                 .padding(.bottom, 4)
             ScrollView {
                 VStack(spacing: 12) {
-                    ForEach(viewModel.matchingRoutes, id: \.self) { route in
-                        RouteCardView(route: route)
+                    ForEach(viewModel.matchingRoutes, id: \ .self) { route in
+                        NavigationLink(destination: RouteResultView(routeResult: RouteResultModel.from(route: route))) {
+                            RouteCardView(route: route)
+                        }
                     }
                 }
                 .padding(.vertical, 4)

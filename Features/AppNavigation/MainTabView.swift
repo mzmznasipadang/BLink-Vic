@@ -17,11 +17,11 @@ struct MainTabView: View {
                     Text("Home")
                 }
             
-            ScanView()
-                .tabItem {
-                    Image(systemName: "camera")
-                    Text("Scan")
-                }
+//            ScanView()
+//                .tabItem {
+//                    Image(systemName: "camera")
+//                    Text("Scan")
+//                }
             
             ProfileView()
                 .tabItem {
