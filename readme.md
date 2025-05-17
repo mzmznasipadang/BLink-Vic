@@ -1,4 +1,8 @@
+![BLink-Vic App Banner](For%20Github.png)
+
 # BLink-Vic
+
+
 
 BLink-Vic is a modern iOS application designed to help users navigate the BSD Link (BSD City, Indonesia) bus system with ease. The app provides real-time route search, bus stop information, and seamless integration with iOS features like Shortcuts and Spotlight.
 
