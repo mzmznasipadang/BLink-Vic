@@ -6,34 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		8BF89D662DD6E3FA001FA455 /* AppIntents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 8BF89D5D2DD6E3FA001FA455 /* AppIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B81D8A62DCB4C15006EDEEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B81D8AD2DCB4C15006EDEEC;
-			remoteInfo = "BLink-Vic";
-		};
-		8B81D8C82DCB4C16006EDEEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B81D8A62DCB4C15006EDEEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B81D8AD2DCB4C15006EDEEC;
-			remoteInfo = "BLink-Vic";
-		};
-		8BF89D642DD6E3FA001FA455 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B81D8A62DCB4C15006EDEEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BF89D5C2DD6E3FA001FA455;
-			remoteInfo = AppIntents;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		8BF89D6B2DD6E3FA001FA455 /* Embed ExtensionKit Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -41,7 +13,6 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				8BF89D662DD6E3FA001FA455 /* AppIntents.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,9 +21,6 @@
 
 /* Begin PBXFileReference section */
 		8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLink-Vic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLink-VicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BF89D5D2DD6E3FA001FA455 /* AppIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = AppIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,17 +31,10 @@
 			);
 			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
 		};
-		8BF89D6A2DD6E3FA001FA455 /* Exceptions for "AppIntents" folder in "AppIntents" target */ = {
+		8BF89DA32DD85536001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
-			);
-			target = 8BF89D5C2DD6E3FA001FA455 /* AppIntents */;
-		};
-		8BF89D7A2DD84816001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				OpenSearchResultIntent.swift,
+				AppIntents.swift,
 			);
 			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
 		};
@@ -88,26 +49,15 @@
 			path = "BLink-Vic";
 			sourceTree = "<group>";
 		};
-		8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "BLink-VicTests";
-			sourceTree = "<group>";
-		};
-		8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "BLink-VicUITests";
-			sourceTree = "<group>";
-		};
 		8B81D9352DCDE347006EDEEC /* Features */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Features;
 			sourceTree = "<group>";
 		};
-		8BF89D5E2DD6E3FA001FA455 /* AppIntents */ = {
+		8BF89D802DD85327001FA455 /* AppIntents */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8BF89D7A2DD84816001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */,
-				8BF89D6A2DD6E3FA001FA455 /* Exceptions for "AppIntents" folder in "AppIntents" target */,
+				8BF89DA32DD85536001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */,
 			);
 			path = AppIntents;
 			sourceTree = "<group>";
@@ -122,27 +72,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B81D8BA2DCB4C16006EDEEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B81D8C42DCB4C16006EDEEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BF89D5A2DD6E3FA001FA455 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -151,9 +80,7 @@
 			children = (
 				8B81D9352DCDE347006EDEEC /* Features */,
 				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
-				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
-				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
-				8BF89D5E2DD6E3FA001FA455 /* AppIntents */,
+				8BF89D802DD85327001FA455 /* AppIntents */,
 				8B81D8AF2DCB4C15006EDEEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,9 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */,
-				8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */,
-				8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */,
-				8BF89D5D2DD6E3FA001FA455 /* AppIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +108,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8BF89D652DD6E3FA001FA455 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8B81D8B02DCB4C15006EDEEC /* BLink-Vic */,
@@ -197,74 +120,6 @@
 			productReference = 8B81D8AE2DCB4C15006EDEEC /* BLink-Vic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B81D8BC2DCB4C16006EDEEC /* BLink-VicTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B81D8D42DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicTests" */;
-			buildPhases = (
-				8B81D8B92DCB4C16006EDEEC /* Sources */,
-				8B81D8BA2DCB4C16006EDEEC /* Frameworks */,
-				8B81D8BB2DCB4C16006EDEEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B81D8BF2DCB4C16006EDEEC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8B81D8C02DCB4C16006EDEEC /* BLink-VicTests */,
-			);
-			name = "BLink-VicTests";
-			packageProductDependencies = (
-			);
-			productName = "BLink-VicTests";
-			productReference = 8B81D8BD2DCB4C16006EDEEC /* BLink-VicTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8B81D8C62DCB4C16006EDEEC /* BLink-VicUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B81D8D72DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicUITests" */;
-			buildPhases = (
-				8B81D8C32DCB4C16006EDEEC /* Sources */,
-				8B81D8C42DCB4C16006EDEEC /* Frameworks */,
-				8B81D8C52DCB4C16006EDEEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B81D8C92DCB4C16006EDEEC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8B81D8CA2DCB4C16006EDEEC /* BLink-VicUITests */,
-			);
-			name = "BLink-VicUITests";
-			packageProductDependencies = (
-			);
-			productName = "BLink-VicUITests";
-			productReference = 8B81D8C72DCB4C16006EDEEC /* BLink-VicUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		8BF89D5C2DD6E3FA001FA455 /* AppIntents */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BF89D672DD6E3FA001FA455 /* Build configuration list for PBXNativeTarget "AppIntents" */;
-			buildPhases = (
-				8BF89D592DD6E3FA001FA455 /* Sources */,
-				8BF89D5A2DD6E3FA001FA455 /* Frameworks */,
-				8BF89D5B2DD6E3FA001FA455 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				8BF89D5E2DD6E3FA001FA455 /* AppIntents */,
-			);
-			name = AppIntents;
-			packageProductDependencies = (
-			);
-			productName = AppIntents;
-			productReference = 8BF89D5D2DD6E3FA001FA455 /* AppIntents.appex */;
-			productType = "com.apple.product-type.extensionkit-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,17 +131,6 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					8B81D8AD2DCB4C15006EDEEC = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					8B81D8BC2DCB4C16006EDEEC = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 8B81D8AD2DCB4C15006EDEEC;
-					};
-					8B81D8C62DCB4C16006EDEEC = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 8B81D8AD2DCB4C15006EDEEC;
-					};
-					8BF89D5C2DD6E3FA001FA455 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -306,36 +150,12 @@
 			projectRoot = "";
 			targets = (
 				8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */,
-				8B81D8BC2DCB4C16006EDEEC /* BLink-VicTests */,
-				8B81D8C62DCB4C16006EDEEC /* BLink-VicUITests */,
-				8BF89D5C2DD6E3FA001FA455 /* AppIntents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B81D8AC2DCB4C15006EDEEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B81D8BB2DCB4C16006EDEEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B81D8C52DCB4C16006EDEEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BF89D5B2DD6E3FA001FA455 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,46 +172,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B81D8B92DCB4C16006EDEEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B81D8C32DCB4C16006EDEEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BF89D592DD6E3FA001FA455 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8B81D8BF2DCB4C16006EDEEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
-			targetProxy = 8B81D8BE2DCB4C16006EDEEC /* PBXContainerItemProxy */;
-		};
-		8B81D8C92DCB4C16006EDEEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
-			targetProxy = 8B81D8C82DCB4C16006EDEEC /* PBXContainerItemProxy */;
-		};
-		8BF89D652DD6E3FA001FA455 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BF89D5C2DD6E3FA001FA455 /* AppIntents */;
-			targetProxy = 8BF89D642DD6E3FA001FA455 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8B81D8CF2DCB4C16006EDEEC /* Debug */ = {
@@ -589,128 +370,6 @@
 			};
 			name = Release;
 		};
-		8B81D8D52DCB4C16006EDEEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLink-Vic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLink-Vic";
-			};
-			name = Debug;
-		};
-		8B81D8D62DCB4C16006EDEEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLink-Vic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BLink-Vic";
-			};
-			name = Release;
-		};
-		8B81D8D82DCB4C16006EDEEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BLink-Vic";
-			};
-			name = Debug;
-		};
-		8B81D8D92DCB4C16006EDEEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-VicUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BLink-Vic";
-			};
-			name = Release;
-		};
-		8BF89D682DD6E3FA001FA455 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppIntents/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AppIntents;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic.AppIntents";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		8BF89D692DD6E3FA001FA455 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8PA28UZH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppIntents/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AppIntents;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "naspadstudio.BLink-Vic.AppIntents";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -728,33 +387,6 @@
 			buildConfigurations = (
 				8B81D8D22DCB4C16006EDEEC /* Debug */,
 				8B81D8D32DCB4C16006EDEEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8B81D8D42DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B81D8D52DCB4C16006EDEEC /* Debug */,
-				8B81D8D62DCB4C16006EDEEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8B81D8D72DCB4C16006EDEEC /* Build configuration list for PBXNativeTarget "BLink-VicUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B81D8D82DCB4C16006EDEEC /* Debug */,
-				8B81D8D92DCB4C16006EDEEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BF89D672DD6E3FA001FA455 /* Build configuration list for PBXNativeTarget "AppIntents" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BF89D682DD6E3FA001FA455 /* Debug */,
-				8BF89D692DD6E3FA001FA455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
