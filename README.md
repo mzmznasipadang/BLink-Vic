@@ -1,4 +1,6 @@
-![BLink-Vic App Banner](For%20Github.png)
+<p align="center">
+  <img src="https://github.com/mzmznasipadang/BLink-Vic/blob/main/Assets/For%20Github.png" alt="BLink! Poster"/>
+</p>
 
 # BLink-Vic
 
