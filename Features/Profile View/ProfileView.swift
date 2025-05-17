@@ -12,11 +12,12 @@ struct ProfileView: View {
     var body: some View {
         VStack(spacing: 24) {
             // Avatar
-            Image(systemName: "person.crop.circle.fill")
+            Image("Profile")
                 .resizable()
-                .frame(width: 100, height: 100)
                 .foregroundColor(.blue)
                 .padding(.top, 40)
+                .clipShape(Circle())
+                .frame(width: 150, height: 250)
 
             // Name
             Text("John Doe")
