@@ -17,6 +17,8 @@ struct HomeView: View {
     @State private var showSearchResults = false
     @State private var selectedCompletion: MKLocalSearchCompletion?
     @State private var showSearchResult = false
+    @State private var selectedRoute: HomeRouteViewData?
+    @State private var showRouteResult = false
     var shortcutDestination: String? = nil
     
     init(shortcutDestination: String? = nil) {
@@ -87,6 +89,26 @@ struct HomeView: View {
                     .padding(.top, 8)
                 }
                 
+                // After the search bar and before Spacer()
+                if !viewModel.recentRoutes.isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Recent Routes")
+                            .font(.headline)
+                            .padding(.horizontal)
+                        ForEach(viewModel.recentRoutes) { route in
+                            Button {
+                                selectedRoute = route
+                                showRouteResult = true
+                            } label: {
+                                HomeRouteCard(route: route)
+                                    .padding(.horizontal)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
+                    }
+                    .padding(.top, 8)
+                }
+                
                 Spacer()
                 
             }
@@ -101,6 +123,16 @@ struct HomeView: View {
             .navigationDestination(isPresented: $showSearchResult) {
                 if let completion = selectedCompletion {
                     SearchResultView(selectedCompletion: completion)
+                }
+            }
+            .navigationDestination(isPresented: $showRouteResult) {
+                if let selectedRoute = selectedRoute {
+                    // Fetch the full RouteModel from SwiftData using the id
+                    if let routeModel = RouteResultModel.fetchRoute(by: selectedRoute.id, modelContext: modelContext) {
+                        RouteResultView(routeResult: RouteResultModel.from(route: routeModel))
+                    } else {
+                        Text("Route not found.")
+                    }
                 }
             }
         }
