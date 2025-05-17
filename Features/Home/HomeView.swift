@@ -17,8 +17,10 @@ struct HomeView: View {
     @State private var showSearchResults = false
     @State private var selectedCompletion: MKLocalSearchCompletion?
     @State private var showSearchResult = false
+    var shortcutDestination: String? = nil
     
-    init() {
+    init(shortcutDestination: String? = nil) {
+        self.shortcutDestination = shortcutDestination
         let primary = UIColor(named: "Primary") ?? UIColor.systemBlue
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: primary]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: primary]

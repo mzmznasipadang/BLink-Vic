@@ -14,8 +14,11 @@ struct AppIntents: AppIntent {
     static var description = IntentDescription("Open the search result screen in BLink-Vic.")
     static var openAppWhenRun: Bool = true
 
+    @Parameter(title: "Destination")
+    var destination: String
+
     func perform() async throws -> some IntentResult {
-        UserDefaults.standard.set(true, forKey: "launchSearchFromShortcut")
+        UserDefaults.standard.set(destination, forKey: "shortcutDestination")
         return .result()
     }
 }

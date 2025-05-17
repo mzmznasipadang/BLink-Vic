@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 
 struct MainTabView: View {
+    var shortcutDestination: String? = nil
+
     var body: some View {
         TabView {
-            HomeView()
+            HomeView(shortcutDestination: shortcutDestination)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")

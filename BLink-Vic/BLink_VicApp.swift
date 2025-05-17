@@ -11,7 +11,8 @@ import AppIntents
 
 @main
 struct BLink_VicApp: App {
-    
+    @State private var shortcutDestination: String? = UserDefaults.standard.string(forKey: "shortcutDestination")
+
     init() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -32,7 +33,7 @@ struct BLink_VicApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            MainTabView(shortcutDestination: shortcutDestination)
                 .modelContainer(sharedModelContainer)
                 .onAppear {
                     let context = sharedModelContainer.mainContext
@@ -42,6 +43,11 @@ struct BLink_VicApp: App {
                         if count == 0 {
                             DataSeeder.seedInitialData(modelContext: context)
                         }
+                    }
+                    let dest = UserDefaults.standard.string(forKey: "shortcutDestination")
+                    if let dest = dest, !dest.isEmpty {
+                        shortcutDestination = dest
+                        UserDefaults.standard.removeObject(forKey: "shortcutDestination")
                     }
                 }
         }
