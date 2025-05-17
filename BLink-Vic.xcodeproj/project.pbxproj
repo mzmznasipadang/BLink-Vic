@@ -70,6 +70,13 @@
 			);
 			target = 8BF89D5C2DD6E3FA001FA455 /* AppIntents */;
 		};
+		8BF89D7A2DD84816001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OpenSearchResultIntent.swift,
+			);
+			target = 8B81D8AD2DCB4C15006EDEEC /* BLink-Vic */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -99,6 +106,7 @@
 		8BF89D5E2DD6E3FA001FA455 /* AppIntents */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				8BF89D7A2DD84816001FA455 /* Exceptions for "AppIntents" folder in "BLink-Vic" target */,
 				8BF89D6A2DD6E3FA001FA455 /* Exceptions for "AppIntents" folder in "AppIntents" target */,
 			);
 			path = AppIntents;

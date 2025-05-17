@@ -8,5 +8,5 @@
 import AppIntents
 
 @main
-struct AppIntentsExtension: AppIntentsExtension {
+struct AppIntentsExtension: AppIntentsExtensionProtocol {
 }
