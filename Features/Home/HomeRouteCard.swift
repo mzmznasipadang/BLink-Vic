@@ -8,7 +8,7 @@ struct HomeRouteCard: View {
             // Badge
             Text(route.routeCode)
                 .font(.subheadline).fontWeight(.semibold)
-                .foregroundColor(.white)
+                .foregroundColor(Color("BG"))
                 .frame(minWidth: 40, minHeight: 32)
                 .background(
                     Capsule()
